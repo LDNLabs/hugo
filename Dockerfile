@@ -4,7 +4,8 @@ LABEL name="Hugo"
 # Install wget
 RUN  apt-get update \
   && apt-get install -y wget \
-  && apt-get install -y npm
+  && apt-get install -y npm \
+  && apt-get install -y gettext
 
 # Install hugo
 RUN wget https://github.com/gohugoio/hugo/releases/download/v0.69.2/hugo_extended_0.69.2_Linux-64bit.tar.gz
